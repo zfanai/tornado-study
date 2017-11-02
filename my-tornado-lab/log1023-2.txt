@@ -1,0 +1,106 @@
+
+C:\Users\zhoufan\Projects\Python\python-study\framework\tornado\practise>vpy27 coroutine.py 
+
+C:\Users\zhoufan\Projects\Python\python-study\framework\tornado\practise>C:\Users\zhoufan\Programs\VirtualEnv\python27\Scripts\python coroutine.py      
+Future:sd:1: [] <tornado.concurrent.Future object at 0x02946030>
+Future:sd:1: [] <tornado.concurrent.Future object at 0x02946070>
+PIOL:at:
+PIOL:ca:
+None
+
+<class 'tornado.platform.select.SelectIOLoop'>
+run_sync 0 None
+run_sync 1
+
+
+========select ioloop:1: [<functools.partial object at 0x02983F60>]
+PIOL:s: [<tornado.ioloop._Timeout object at 0x02984CD8>]
+PIOL:s5: <functools.partial object at 0x028C01B0> 1508727688.61
+PIOL:rcb: <functools.partial object at 0x02983F60>
+run_sync:run:1
+mcw: True {}
+mcw:1:
+mcw:4: <generator object main at 0x02984D78>
+mcw:5: ((), None)
+m:1
+m:2 <tornado.concurrent.Future object at 0x0292F050>
+mcw: True {}
+mcw:1:
+mcw:4: <generator object func1 at 0x02984DA0>
+mcw:5: ((), None)
+func1:
+mcw:6: <tornado.concurrent.Future object at 0x0292F050>
+mcw:9: <generator object func1 at 0x02984DA0> <tornado.concurrent.Future object at 0x02988070> <tornado.concurrent.Future object at 0x0292F050>
+gen.hy:1: <tornado.concurrent.Future object at 0x0292F050>
+gen.hy:5:
+gen.hy:7: <tornado.concurrent.Future object at 0x0292F050> <tornado.concurrent.Future object at 0x0292F050>
+Fu:adc2
+mcw:10: <tornado.concurrent.Future object at 0x02988070>
+mcw:11:
+mcw:6: <tornado.concurrent.Future object at 0x02988070>
+mcw:9: <generator object main at 0x02984D78> <tornado.concurrent.Future object at 0x02988030> <tornado.concurrent.Future object at 0x02988070>
+gen.hy:1: <tornado.concurrent.Future object at 0x02988070>
+gen.hy:5:
+gen.hy:7: <tornado.concurrent.Future object at 0x02988070> <tornado.concurrent.Future object at 0x02988070>
+Fu:adc2
+mcw:10: <tornado.concurrent.Future object at 0x02988030>
+mcw:11:
+run_sync:run:2 <tornado.concurrent.Future object at 0x02988030>
+run_sync:run:3 <tornado.concurrent.Future object at 0x02988030>
+run_sync:run:3.1: <tornado.concurrent.Future object at 0x02988030>
+run_sync:run:5
+run_sync:run:6: [<tornado.concurrent.Future object at 0x02988030>]
+Fu:adc2
+PIOL:s7:
+select poll:5, 2.0
+select poll:6, [(436, 1)]
+
+
+========select ioloop:1: []
+PIOL:s: [<tornado.ioloop._Timeout object at 0x02984CD8>]
+PIOL:s5: <functools.partial object at 0x028C01B0> 1508727688.61
+PIOL:s7:
+select poll:5, 2.0
+select poll:6, []
+
+
+========select ioloop:1: []
+PIOL:s: [<tornado.ioloop._Timeout object at 0x02984CD8>]
+PIOL:s5: <functools.partial object at 0x028C01B0> 1508727688.61
+PIOL:s6: <tornado.ioloop._Timeout object at 0x02984CD8>
+cb
+Future:sd:1: [] <tornado.concurrent.Future object at 0x0292F030>
+Future:sd:1: [<function <lambda> at 0x02986830>] <tornado.concurrent.Future object at 0x0292F050>
+select poll:5, 0.0
+select poll:6, []
+
+
+========select ioloop:1: [<functools.partial object at 0x02983F60>]
+PIOL:rcb: <functools.partial object at 0x02983F60>
+gen.Runner.run:1 <tornado.concurrent.Future object at 0x0292F050> <tornado.concurrent.Future object at 0x02946030>
+['  File "coroutine.py", line 120, in <module>\n    io_loop.run_sync(main)\n', '  File "C:\\Users\\zhoufan\\Programs\\VirtualEnv\\python27\\lib\\site-packages\\tornado\\ioloop.py", line 465, in run_sync\n    self.start()\n', '  File "C:\\Users\\zhoufan\\Programs\\VirtualEnv\\python27\\lib\\site-packages\\tornado\\ioloop.py", line 855, in start\n    self._run_callback(callback)\n', '  File "C:\\Users\\zhoufan\\Programs\\VirtualEnv\\python27\\lib\\site-packages\\tornado\\ioloop.py", line 623, in _run_callback\n    ret = callback()\n', '  File "C:\\Users\\zhoufan\\Programs\\VirtualEnv\\python27\\lib\\site-packages\\tornado\\stack_context.py", line 275, in null_wrapper\n    return fn(*args, **kwargs)\n', '  File "C:\\Users\\zhoufan\\Programs\\VirtualEnv\\python27\\lib\\site-packages\\tornado\\gen.py", line 1130, in <lambda>\n    self.future, lambda f: self.run())\n', '  File "C:\\Users\\zhoufan\\Programs\\VirtualEnv\\python27\\lib\\site-packages\\tornado\\gen.py", line 1017, in run\n    print (traceback.format_stack())\n']
+gen.Runner.run:4
+func1:a: 113
+gen.Runner.run:5 None
+Future:sd:1: [<function <lambda> at 0x029868F0>] <tornado.concurrent.Future object at 0x02988070>
+gen.Runner.run:9
+select poll:5, 0.0
+select poll:6, []
+
+
+========select ioloop:1: [<functools.partial object at 0x029995D0>]
+PIOL:rcb: <functools.partial object at 0x029995D0>
+gen.Runner.run:1 <tornado.concurrent.Future object at 0x02988070> <tornado.concurrent.Future object at 0x02946030>
+['  File "coroutine.py", line 120, in <module>\n    io_loop.run_sync(main)\n', '  File "C:\\Users\\zhoufan\\Programs\\VirtualEnv\\python27\\lib\\site-packages\\tornado\\ioloop.py", line 465, in run_sync\n    self.start()\n', '  File "C:\\Users\\zhoufan\\Programs\\VirtualEnv\\python27\\lib\\site-packages\\tornado\\ioloop.py", line 855, in start\n    self._run_callback(callback)\n', '  File "C:\\Users\\zhoufan\\Programs\\VirtualEnv\\python27\\lib\\site-packages\\tornado\\ioloop.py", line 623, in _run_callback\n    ret = callback()\n', '  File "C:\\Users\\zhoufan\\Programs\\VirtualEnv\\python27\\lib\\site-packages\\tornado\\stack_context.py", line 275, in null_wrapper\n    return fn(*args, **kwargs)\n', '  File "C:\\Users\\zhoufan\\Programs\\VirtualEnv\\python27\\lib\\site-packages\\tornado\\gen.py", line 1130, in <lambda>\n    self.future, lambda f: self.run())\n', '  File "C:\\Users\\zhoufan\\Programs\\VirtualEnv\\python27\\lib\\site-packages\\tornado\\gen.py", line 1017, in run\n    print (traceback.format_stack())\n']
+gen.Runner.run:4
+m:3 113
+gen.Runner.run:5 None
+Future:sd:1: [<function <lambda> at 0x029869B0>] <tornado.concurrent.Future object at 0x02988030>
+gen.Runner.run:9
+select poll:5, 0.0
+select poll:6, []
+
+
+========select ioloop:1: [<functools.partial object at 0x02983F60>]
+PIOL:rcb: <functools.partial object at 0x02983F60>
+run_sync 2

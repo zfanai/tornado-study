@@ -1,0 +1,32 @@
+2017/10/23
+在gen.coroutine里面， 
+关键代码之一：
+Runner(result, future, yielded)
+result是什么？reuslt是被gen.coroutine修饰的生成器， 也就是协程代码的主体， 
+future是这个协程的外部代表， yield是生成器的返回值， 一般要求是特定类型。
+比如说在最外层， 用run_sync来执行的main, future得到结果之后就会停止程序运行。
+ioloop对象有add_future功能， add_future函数里面会给Future增加add_done_callback功能。
+future的callback执行的时候，也只是跟ioloop的callback增加了一个callback， 并没有就立即执行这个callback。
+
+coroutine的定义只是写好了回调之间的结构， 程序的主循环就是检测callback和执行callback.
+
+o-
+ |--o-
+ |   |--o  
+ |  
+ |   
+ |--o 
+
+同一x位置的竖线代表一个协程。 
+ 
+ 
+2017/10/23
+gen.coroutine必须跟yield配套使用
+如果没有gen.coroutine, 而在处理函数里面使用了yield会报错。
+
+如果使用了gen.coroutine修饰器，而在被修饰函数里面没有使用yield， 
+那么这个修饰器也就不会起任何作用，也不会有什么影响。
+
+异步的意思就是当你不能立马得到结果的时候，不用一直等待，而导致其他事情也无法处理的差体验。
+虽然得不到结果之前都是在等待， 但是如果采用异步处理， 其他事情可以处理。
+等到耗时的处理有了一个结果之后， 在继续处理，一般都是通过回调的方式。

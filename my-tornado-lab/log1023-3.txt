@@ -1,0 +1,71 @@
+
+C:\Users\zhoufan\Projects\Python\python-study\framework\tornado\practise>vpy27 coroutine2.py 
+
+C:\Users\zhoufan\Projects\Python\python-study\framework\tornado\practise>C:\Users\zhoufan\Programs\VirtualEnv\python27\Scripts\python coroutine2.py      
+Future:sd:1: [] <tornado.concurrent.Future object at 0x02A68090>
+Future:sd:1: [] <tornado.concurrent.Future object at 0x02A680D0>
+PIOL:at:
+PIOL:ca:
+<class 'tornado.platform.select.SelectIOLoop'>
+run_sync 0 None
+run_sync 1
+
+
+========select ioloop:1: [<functools.partial object at 0x02AA3F60>]
+PIOL:s: [<tornado.ioloop._Timeout object at 0x02AA2DF0>]
+PIOL:s5: <functools.partial object at 0x029E51B0> 1508729888.3
+PIOL:rcb: <functools.partial object at 0x02AA3F60>
+run_sync:run:1
+mcw: True {}
+mcw:1:
+mcw:4: <generator object main at 0x02AA2E90>
+mcw:5: ((), None)
+m:1
+m:2 <tornado.concurrent.Future object at 0x02A510B0>
+mcw: True {}
+mcw:1:
+mcw:4: <generator object func1 at 0x02AA2EB8>
+mcw:5: ((), None)
+func1:
+mcw:6: <tornado.concurrent.Future object at 0x02A510B0>
+mcw:9: <generator object func1 at 0x02AA2EB8> <tornado.concurrent.Future object at 0x02AA8110> <tornado.concurrent.Future object at 0x02A510B0>
+gen.hy:1: <tornado.concurrent.Future object at 0x02A510B0>
+gen.hy:5:
+gen.hy:7: <tornado.concurrent.Future object at 0x02A510B0> <tornado.concurrent.Future object at 0x02A510B0>
+Fu:adc2
+mcw:10: <tornado.concurrent.Future object at 0x02AA8110>
+mcw:11:
+mcw:6: <tornado.concurrent.Future object at 0x02AA8110>
+mcw:9: <generator object main at 0x02AA2E90> <tornado.concurrent.Future object at 0x02AA80B0> <tornado.concurrent.Future object at 0x02AA8110>
+gen.hy:1: <tornado.concurrent.Future object at 0x02AA8110>
+gen.hy:5:
+gen.hy:7: <tornado.concurrent.Future object at 0x02AA8110> <tornado.concurrent.Future object at 0x02AA8110>
+Fu:adc2
+mcw:10: <tornado.concurrent.Future object at 0x02AA80B0>
+mcw:11:
+run_sync:run:2 <tornado.concurrent.Future object at 0x02AA80B0>
+run_sync:run:3 <tornado.concurrent.Future object at 0x02AA80B0>
+run_sync:run:3.1: <tornado.concurrent.Future object at 0x02AA80B0>
+run_sync:run:5
+run_sync:run:6: [<tornado.concurrent.Future object at 0x02AA80B0>]
+Fu:adc2
+PIOL:s7:
+select poll:5, 2.0
+select poll:6, [(436, 1)]
+
+
+========select ioloop:1: []
+PIOL:s: [<tornado.ioloop._Timeout object at 0x02AA2DF0>]
+PIOL:s5: <functools.partial object at 0x029E51B0> 1508729888.3
+PIOL:s7:
+select poll:5, 2.0
+select poll:6, []
+
+
+========select ioloop:1: []
+PIOL:s: [<tornado.ioloop._Timeout object at 0x02AA2DF0>]
+PIOL:s5: <functools.partial object at 0x029E51B0> 1508729888.3
+PIOL:s6: <tornado.ioloop._Timeout object at 0x02AA2DF0>
+cb
+Future:sd:1: [] <tornado.concurrent.Future object at 0x02A51890>
+select poll:5, 3600.0
